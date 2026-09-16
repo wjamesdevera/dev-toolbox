@@ -26,6 +26,48 @@ Maintain
 
 ---
 
+# Table of Contents
+
+1. [The Overall Workflow](#1-the-overall-workflow)
+2. [Project Documentation](#2-project-documentation)
+   - [Project Brief](#project-brief)
+   - [Requirements](#requirements)
+   - [Project Plan](#project-plan)
+   - [Decision Log](#decision-log)
+3. [Define the MVP](#3-define-the-mvp)
+4. [Create the Backlog](#4-create-the-backlog)
+5. [Use Trello to Manage Work](#5-use-trello-to-manage-work)
+6. [Create a Good Task](#6-create-a-good-task)
+7. [Define "Done"](#7-define-done)
+8. [Start Development](#8-start-development)
+9. [Development Workflow](#9-development-workflow)
+10. [Research and Learning](#10-research-and-learning)
+11. [Handling Blockers](#11-handling-blockers)
+12. [Handling Bugs](#12-handling-bugs)
+13. [Keep Work in Progress Small](#13-keep-work-in-progress-small)
+14. [Commit Your Work](#14-commit-your-work)
+15. [Code Review](#15-code-review)
+16. [Testing](#16-testing)
+17. [Move to Review / Testing](#17-move-to-review--testing)
+18. [Definition of Done](#18-definition-of-done)
+19. [Release Planning](#19-release-planning)
+20. [Client Projects](#20-client-projects)
+21. [Handling Client Change Requests](#21-handling-client-change-requests)
+22. [Client Progress Updates](#22-client-progress-updates)
+23. [Release Workflow for Freelance Projects](#23-release-workflow-for-freelance-projects)
+24. [Deployment](#24-deployment)
+25. [Post-Release](#25-post-release)
+26. [Project Maintenance](#26-project-maintenance)
+27. [When the Project Grows](#27-when-the-project-grows)
+28. [Recommended Tools](#28-recommended-tools)
+29. [The Relationship Between Your Tools](#29-the-relationship-between-your-tools)
+30. [The Complete Daily Workflow](#30-the-complete-daily-workflow)
+31. [The Complete Project Workflow](#31-the-complete-project-workflow)
+32. [The Rules](#32-the-rules)
+33. [Minimal Workflow](#33-minimal-workflow)
+
+---
+
 # 1. The Overall Workflow
 
 Use this as the project's overall lifecycle:
@@ -1025,5 +1067,210 @@ Think of each tool as having one primary responsibility.
         ┌────────────┼────────────┐
         │            │            │
         ▼            ▼            ▼
-   Docum
+   Documentation   Trello       Git
+        │            │            │
+      WHY/WHAT      WORK         CODE
+        │            │            │
+        │            │            │
+        └────────────┼────────────┘
+                     │
+                     ▼
+                  RELEASE
+                     │
+                     ▼
+                   USER
 ```
+
+### Documentation
+
+Answers:
+
+> Why are we building this?
+
+> What are the requirements?
+
+> What decisions have we made?
+
+### Trello
+
+Answers:
+
+> What should I work on next?
+
+> What's currently in progress?
+
+> What's finished?
+
+### Git
+
+Answers:
+
+> What changed in the code?
+
+> Who changed it?
+
+> When did it change?
+
+---
+
+# 30. The Complete Daily Workflow
+
+When sitting down to work:
+
+```text
+1. Check project goal
+        ↓
+2. Check Trello
+        ↓
+3. Pick next Ready task
+        ↓
+4. Understand the task
+        ↓
+5. Research if necessary
+        ↓
+6. Create / switch Git branch
+        ↓
+7. Implement
+        ↓
+8. Test locally
+        ↓
+9. Fix problems
+        ↓
+10. Commit
+        ↓
+11. Review
+        ↓
+12. Move Trello card to Done
+        ↓
+13. Pick next task
+```
+
+---
+
+# 31. The Complete Project Workflow
+
+The entire process can be reduced to:
+
+```text
+                    DEFINE
+                      │
+                      ▼
+                  PROJECT BRIEF
+                      │
+                      ▼
+                 REQUIREMENTS
+                      │
+                      ▼
+                   PLAN
+                      │
+                      ▼
+                  BACKLOG
+                      │
+                      ▼
+                    READY
+                      │
+                      ▼
+                 DEVELOPMENT
+                      │
+              ┌───────┴───────┐
+              │               │
+            Blocked         Working
+              │               │
+              ▼               ▼
+          Research /       Implement
+          Resolve          & Test
+              │               │
+              └───────┬───────┘
+                      ▼
+                   REVIEW
+                      │
+                      ▼
+                    DONE
+                      │
+                      ▼
+                  RELEASE
+                      │
+                      ▼
+                 PRODUCTION
+                      │
+                      ▼
+                  MAINTAIN
+                      │
+                      └──────► BACKLOG
+```
+
+---
+
+# 32. The Rules
+
+If you want to keep the entire workflow simple, remember these rules.
+
+### Rule 1 — Define before building
+
+Know what problem you're solving.
+
+### Rule 2 — Keep the MVP small
+
+Don't build everything you can imagine.
+
+### Rule 3 — Break work into meaningful tasks
+
+One task should have a clear outcome.
+
+### Rule 4 — Work on a small number of things
+
+Prefer finishing over starting.
+
+### Rule 5 — Research when blocked
+
+But research only enough to continue.
+
+### Rule 6 — Test while developing
+
+Don't leave all testing until the end.
+
+### Rule 7 — Define Done
+
+Know what completion means.
+
+### Rule 8 — Record important decisions
+
+Don't document every thought.
+
+### Rule 9 — Treat scope as a boundary
+
+Especially when working with clients.
+
+### Rule 10 — Release working software
+
+The goal isn't a perfect Trello board.
+
+The goal isn't perfect documentation.
+
+The goal isn't perfect architecture.
+
+> **The goal is to build, ship, learn, and improve.**
+
+---
+
+# 33. Minimal Workflow
+
+If the full workflow feels like too much, reduce it to this:
+
+```text
+PLAN
+  ↓
+CREATE TASK
+  ↓
+BUILD
+  ↓
+TEST
+  ↓
+DONE
+  ↓
+SHIP
+```
+
+Use the more detailed workflow only when the project actually requires it.
+
+For a solo developer, **simple and consistently followed beats sophisticated and abandoned.**
